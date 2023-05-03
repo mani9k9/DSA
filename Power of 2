@@ -8,10 +8,15 @@ class Solution{
         // Your code here
         
         long power = 1;
-        for(; power<n; power=power*2){
+       /* for(; power<n; power=power*2){
             
         }
-        return (power==n);
+        return (power==n);*/
+        
+        while(power<n){
+            power *=2;
+        }
+        return(power==n);
         
     }
     
