@@ -1,0 +1,29 @@
+GKSTR20 Pattern_5
+
+#https://www.hackerrank.com/contests/module-1-java-dsa-class-challenges/challenges/gkstr20-pattern-5/problem
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int stars =1, spaces=n-1;
+        for(int row = 1; row<=n; row++){
+            for(int col=1;col<=spaces; col++){
+                System.out.print(" ");
+            }
+            for(int col=1; col<=stars; col++){
+               System.out.print("*");           
+            }
+            System.out.println();
+            stars++; spaces--;
+        }
+    }
+}
