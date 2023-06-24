@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Solution extends VersionControl {
     // APPROACH : 1
-    public int firstBadVersion(int n) {
+  /*  public int firstBadVersion(int n) {
         int left = 1, right = n;
 
         while (left <= right) {
@@ -16,11 +16,11 @@ public class Solution extends VersionControl {
         }
 
         return left;
-    }
+    } */
 
     // APPROACH : 2
 
-   /* public int firstBadVersion(int n) {
+    public int firstBadVersion(int n) {
         long left = 1, right = n;
 
         while (left <= right) {
@@ -34,6 +34,6 @@ public class Solution extends VersionControl {
         }
 
         return (int) left;
-    } */
+    } 
 
 }
