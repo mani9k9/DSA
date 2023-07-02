@@ -1,0 +1,32 @@
+Question Link :- https://www.interviewbit.com/problems/woodcutting-made-easy/
+
+Solution:-
+
+
+public class Solution {
+    public boolean isPossible(int[] trees, int reqdWood, int cut) {
+        long wood = 0; // Use long to avoid integer overflow
+
+        for (int tree : trees) {
+            wood += Math.max(0, tree - cut); // Avoid if condition for positive contribution
+        }
+
+        return (wood >= reqdWood);
+    }
+
+    public int solve(int[] trees, int reqdWood) {
+        int left = 0, right = (int) 1e6;
+
+        while (left < right) {
+            int mid = left + (right - left + 1) / 2; // Adjust midpoint calculation
+
+            if (isPossible(trees, reqdWood, mid)) {
+                left = mid;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        return left;
+    }
+}
