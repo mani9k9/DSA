@@ -23,8 +23,9 @@ class Solution {
 
     void printNos(int N) {
         // code here
-         for(int idx=N; idx>= 1; idx--){
-        System.out.print(idx + " ");
+        if(N == 0) return;
+        System.out.print(N + " ");
+        
+        printNos(N-1);
          }
-    }
 }
