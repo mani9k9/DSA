@@ -64,7 +64,7 @@ class Compute
         //Write your code here
        long max=a[0];
         long min=a[0];
-        for(int i=1;i<a.length;++i){
+        for(int i=0;i<a.length;i++){
             if(a[i]>max){
                 max=a[i];
             }
