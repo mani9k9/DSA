@@ -1,8 +1,9 @@
 class Solution {
     public int arrayNesting(int[] nums) {
      int ans = 0;
-        for(int i=0; i<nums.length;i++){
-            int next =i;
+        int n = nums.length;
+        for(int i=0; i<n;i++){
+            int next =i; // value of the array index
             int count =0;
             while(nums[next]!= -1){
                 count++;
