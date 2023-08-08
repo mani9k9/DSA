@@ -1,13 +1,18 @@
 class Solution {
     public int search(int[] nums, int target) { 
         // Linear Search
-      
-        
+      int n = nums.length;
+        for(int i =0;i<n;i++){
+            if(nums[i]==target){
+                return i;
+            }
+        }
+        return -1;
         
         
         //Binary Search
         
-        int left = 0;
+      /*  int left = 0;
         int right = nums.length - 1;
         
         while(left <= right){
@@ -34,5 +39,6 @@ class Solution {
             }
         }
         return -1;
+        */
     }
 }
