@@ -1,5 +1,6 @@
 class Solution {
     public int search(int[] nums, int target) { 
+       //Approach 1
         // Linear Search
       int n = nums.length;
         for(int i =0;i<n;i++){
@@ -9,7 +10,7 @@ class Solution {
         }
         return -1;
         
-        
+        //Approach 2
         //Binary Search
         
       /*  int left = 0;
