@@ -14,9 +14,11 @@ class Solution {
         //Approach 2
         //Binary Search
         
+        //initialize two pointer
         int left = 0;
         int right = nums.length - 1;
         
+        //initialize mid value for binary search
         while(left <= right){
             int mid = left + (right-left)/2;
             
